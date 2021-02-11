@@ -1,0 +1,9 @@
+https://stackabuse.com/deploying-a-flask-application-to-heroku/
+
+First install heroku-cli
+Then Make a Procfile
+then make a Requirements.txt file as given in folder
+Go to Github and create a new repository
+git init
+add the files
+Go to Heroku and then connect to github and go along
