@@ -1,28 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home Page</title>
+	<title>Marks Prediction</title>
 </head>
 <body>
-	<h1>
-		Heading 1
-	</h1>
-		{% if number > 10 %}
-		{{ number}} is greater than 10
-		{% else %}
-		{{ number }} is smaller than 10
-		{% endif %}
+	<form method="POST". action="/">
+		<input type="text" name="hours" placeholder="Hours of Study">
+		<input type="submit">
+		
+	</form>
+	<h1> Your marks are {{ your_marks }} </h1>
 
-	{% for f in my_friends %}
-	 <h3>{{ f }}</h3>
-	 {% endfor %}
-
-	 <form method="POST", action="/submit", enctype="multipart/form-data">
-	 	<input type="text" name="Your name", placeholder="Enter your name">
-	 	
-	 	<input type="file" name="userfiles">
-	 	<input type="submit">
-	 	
-	 </form>
 </body>
 </html>
