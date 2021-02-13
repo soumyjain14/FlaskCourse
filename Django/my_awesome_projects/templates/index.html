@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hello World!</title>
+        <title>Universities list</title>
     </head>
     <body>
-        <h1>Hello World!, This is Soumy</h1>
+        <h1>List of University</h1>
+        <ul>
+            {% for f in list %}
+             <li>{{f}}</li> 
+            {% endfor %}
+        </ul>
+        <span>Preferred university as of now : {{university}} </span>
     </body>
 </html>
