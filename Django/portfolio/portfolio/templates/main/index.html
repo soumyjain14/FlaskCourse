@@ -1,0 +1,53 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+{% include 'main/nav.html' %}
+
+<div class="container">
+    <h1 class="center-align">Index Page</h1>
+    <div class="row">
+        <div class="col s12 m4">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <img class="materialboxed responsive-img" src="https://avatars.githubusercontent.com/u/64483453?s=400&u=53bef289fd8f2cc3a37dba706867b7c2d5eb70af&v=4">
+                  <span class="card-title">Soumy Jain</span>
+                  <p></p>
+                </div>
+                <div class="card-action">
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+
+                </div>
+                
+              </div>
+
+        </div>
+        <div class="col s12 m8">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Card Title</span>
+                  <p></p>
+                </div>
+                
+              </div>
+
+        </div>
+
+    </div>
+    
+
+</div>
+ 
+{% endblock %}
+
+{% block script %}
+<script>
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
+  });
+</script>
+
+
+
+{% endblock %}
